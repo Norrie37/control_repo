@@ -6,7 +6,7 @@ node "oci-pmaster.subnet04030040.vcn04030040.oraclevcn.com" {
   include role::master_server
   file { '/root/README':
     ensure  => file,
-    content => $fqdn,
+    content => "Welcome to ${fqdn}\n",
   }
 }
 
