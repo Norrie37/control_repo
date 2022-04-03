@@ -1,2 +1,3 @@
-# control_repo
-Learning Puppet
+# Control Repo
+## Training
+Learning to manage nodes with Puppet.
