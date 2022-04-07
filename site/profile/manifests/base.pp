@@ -8,17 +8,7 @@ class profile::base {
   include profile::ssh_server
 }
 
-# Class: accounts::user { 'dan'
-#   uid      => '4001',
-#   gid      => '4001',
-#   group    => 'staff',
-#   shell    => '/bin/bash',
-#   password => '!!',
-#   locked   => false,
-# }
-#
-#
-class profile::accounts::user { 'bob':
+accounts::user { 'bob':
   uid      => '4001',
   gid      => '4001',
   group    => 'staff',
