@@ -18,7 +18,7 @@ class profile::base {
 # }
 #
 #
-class accounts::user { 'bob':
+class profile::accounts::user { 'bob':
   uid      => '4001',
   gid      => '4001',
   group    => 'staff',
