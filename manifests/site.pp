@@ -8,6 +8,7 @@ node "oci-pmaster.subnet04030040.vcn04030040.oraclevcn.com" {
     ensure  => file,
     content => "Welcome to ${fqdn}\n",
   }
+  accounts::user {'jay':}
 }
 
 node /^web/ {
