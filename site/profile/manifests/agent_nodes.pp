@@ -5,6 +5,7 @@ class profile::agent_nodes {
   include dockeragent
   dockeragent::node {'web.puppet.vm':}
   dockeragent::node {'db.puppet.vm':}
+  dockeragent::node {'forgetest.puppet.vm':}
   dockeragent::node {'mine-test.puppet.vm':}
   host {'web.puppet.vm':
     ensure  => present,
