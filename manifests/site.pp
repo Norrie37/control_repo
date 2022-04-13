@@ -1,8 +1,8 @@
 node default {
-  accounts::user {'jay':}
+  
 }
 
-node "oci-pmaster.subnet04030040.vcn04030040.oraclevcn.com" {
+node "duna-host-vm.subnet04030040.vcn04030040.oraclevcn.com" {
   include role::master_server
   file { '/root/README':
     ensure  => file,
