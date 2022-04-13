@@ -9,10 +9,10 @@ class profile::ssh_server {
     ensure  => 'running',
     enable  => 'true',
   }
-  ssh_authorized_key {'root@oci-pmaster':
+  ssh_authorized_key {'root@duna-host-vm':
     ensure  => present,
     user    => 'root',
     type    => 'ssh-rsa',
-    key     => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDLeTMTZMfzACmmFVq1RltrQYlBBf+2XD0I41RgsypAIqphABJaeqHaZInmYMq3x7VuOvK+CJbXBVy242YZq6rUTm9IkJ/0oTgfB3o5MSElXNFfq8W0yr2ItyB0sy4UOjgAeEk0WjDo8r9pF/Z4HgOnQOOfIgpZWGGI73PCr9yBl6Pi3nc5c8E9y9T0w43PxjJ8RbtD74u9LSa12HTAMhjcNQj3oBzGur6g9IUsqJvVR1PWW8mI9FXhNfi+6pNNb5X3NOZwaejQRWUmDGk1Qhf9v9cVhQou6je4AJ3EJHZGWvnR6hKtfrIUscDQIjqQm9ogirYUchhStQvJjUHk+K9F',
+    key     => 'AAAAB3NzaC1yc2EAAAADAQABAAABgQCz+nYfaURzHLmeAVTFNVTVSewYjgF6f3gsF1d6Sday/QJWfRu+BZCihbyy0MBKw1PT5GmsmrhtefTEnq2uonMFjSO1txIGhMYNGtcxKdXhS82OJODmW6QiwtOwEDVw4FWPyf4Ad13+V9lTGnrHnFpzMj7UP6UCLtnKvO25JdkSOOnwkNA5qiveCTRGf276OaRL0jH+eP30W4SaRQhaAoG9lbMM4/Tpavm/JDeWlHzAmIn1xnmHmwxntKTOrY82AG4VNoBFw4pSZzM1p/BlUxIRdyAgqcp0LBo+PGREIXNGdesf17bELXPgNS0ZRu6fgDm/PByDNvVzH05jcxKHkau3kYgwiZgVwsKrf1FSwZJhCc+PHhJCdJ603K48r/lj/i5TUrQhjJshapWai9otPQyEuIXpiblOnoyCHSoKzgCRyqezZa1C2T86l4jSQAl5IX64ngj5g4s09Q19yTzeb+INaZRLQ8TIBWnXXtSoHa1CyXTLiVGHU6Yask+Kv4G53YU=',
   }
 }
